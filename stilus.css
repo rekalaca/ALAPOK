@@ -1,0 +1,38 @@
+#egyes, #kettes,#harmas{
+  background-color: #2B9FE2;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  width:80%;
+  border: 3px solid #A5F97C;
+}
+body{
+	font-family:tahoma;
+}
+h1{
+	color: #A5F97C;
+}
+h2{
+	color: orange;
+}
+h3{
+	color: black;
+}
+hr{
+	color: #A5F97C;
+}
+table {
+	background-color: #A5F97C;
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 80%;
+    margin-right: auto;
+	margin-left: auto;
+}
+
+td, th {
+  border: 2px solid #2B9FE2;
+  text-align: center;
+  padding: 8px;
+}

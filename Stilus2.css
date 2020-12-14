@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+#egyes, #kettes,#harmas{
+  background-color: #98E0E4;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  width:80%;
+  border: 3px solid #A5F97C;
+}
+
+  h1 {
+    color: #FF0099;
+    text-align: center;
+}
+
+h2 {
+    color: #CC33FF;
+	text-align: left;
+}
+
+ul {
+	list-style: none;
+    width: 28em;
+}
+
+li {
+    border: 10px outset silver;
+    background-color: silver;
+    margin-bottom: 10px;
+	}
+

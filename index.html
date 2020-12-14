@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset=”utf-8”>
+    <title>Digitális témahét 2019.</title>
+    <link rel="icon" type="image/x-icon" href="kepek/favicon.ico"/>
+    <script> //Javascript program ide fog kerülni
+        function szamolas() //Az eljárás elnevezése (a gomb kattintásakor ide ugrik a program)
+        {
+        var ev = document.korszamitas.szulev.value*1; //A weblapon(document),korszamitas elnevezésű form,szulev elnevezésű szöveges beviteli mező értéke(value) egyenlő az ev nevű változóval
+        document.korszamitas.kor.value = 2020-ev;     //A weblapon(document),korszamitas nevű form (űrlap),kor nevű értéke (kiírja) a 2019-ből kivont ev nevű változó értékét
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href= "stilus.css">
+    <script src="hull.js"></script>
+    
+     
+</head>
+<body>
+<div id="egyes">	<!--Keret definiálása-->
+	<h1>Egyes keret</h1>	<!--h1= címsor1 -->
+	<hr> 	<!-- Vonal a weblapon-->
+    <h2>Startup Safary előadásajánló - Felsorolással</h2>	<!--h2= címsor2 -->
+    <ul><!--Listázás kezdete (nem számozott)-->
+	<li><a href="https://budapest.startupsafari.com/agenda/?type=HUNGARIAN#session_712"> FIGYELEMDIÉTA KEZDŐKNEK ÉS HALADÓKNAK </a></li><!--Nem számozott listaelem( a számozottnak is ez)-->     
+	<li>SZELLEMI TULAJDONVÉDELEM </li> <!-- Hivatkozás beszúrása: <a href=" a hivatkozás címe" > Hivatkozás szövege </a> <--lezárja a hivatkozást-->
+	<li>KONVERZIÓ FÓKUSZÚ LANDINGOLDAL-TERVEZÉS </li> 
+	<li>TE MÁR LÁTSZOL A MUNKAERŐPIACON? </li> 
+	<li>MOBILFOTÓZAS FELSŐFOKON </li> 
+	<li>És még sok más téma</li>
+</ul>
+
+</div>
+<div id="kettes">
+	<h1>Kettes keret</h1>	 <!--h1= címsor1 -->
+    <hr>	<!-- Vonal a weblapon-->
+    <table>	<!-- A táblázat jelölése-->
+	<caption><h2>Kirándulás programja - Táblázattal</h2></caption>		<!--h2= címsor2 -->
+	<tr><th><h3>Szöveg</h3></th><th><h3>Kép</h3></th></tr> 			 <!-- A sorok (tr) és az oszlopok (td) meghatározása-->
+	<tr><td><h3>Utazás</h3></td><td><img src="kepek/mav.jpg"></td></tr>
+	<tr><td><h3>Múzeumpedagógia foglalkozás:<br>Pesti srácok</h3></td><td><a href="https://www.youtube.com/watch?v=ubugjp-X-rc&feature=share"><img src="kepek/pestisracok.png"></a></td></tr>
+	<tr><td><h3>Séta a várban</h3></td><td><img src="kepek/budaivar.jpg"></td></tr>
+	<tr><td><h3>Szállás</h3></td><td><img src="kepek/szallas.jpg"></td></tr>
+	<tr><td><h3>Startup Safary</h3></td><td><img src="kepek/safary.png"></td></tr>
+</table>
+
+</div>
+<div id="harmas">
+	<h1>Hármas keret</h1>		<!--h1= címsor1 -->
+	<hr>	<!--A keret végét jelző tag-->
+    <h2>Egy kis programozás - javascript segítségével</h2>	<!--h2= címsor2 -->
+    <form name="korszamitas"><!--Űrlapelemek elhelyezése és elnevezése, hogy tudjunk rá hivatkozni!-->
+        <font>Születési éved: </font><input type="text" name="szulev">  <!--Szöveges beviteli mező (elnevezve, hogy tudjunk rá hivatkozni)-->
+        <input type="button" value="Számol" onClick="szamolas()">  <!--A gomb felirattal és az eljárás neve,melyre hivatkozni fog-->
+        <font>Az életkorod: </font><input type="text" name="kor"><font> éves vagy :) </font><!--Szöveges beviteli mező (most adatmegjelenítésre használjuk)-->
+        <input  type="reset" value="Törlés"> <!--Törlő gomb, ha tévesztettünk vagy új számítást akarunk létrehozni (minden űrlapelem tartalmát törli)-->
+    </form>
+    
+</div>	<!--A keret végét jelző tag-->
+	
+<body>
+</html>

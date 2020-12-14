@@ -1,0 +1,67 @@
+﻿@charset "utf-8";
+
+
+h1 {
+    color: #EC0D0D;
+    text-align: left;
+}
+
+h2 {
+    color: #660000;
+	text-align: left;
+}
+
+ul {
+    list-style: square;
+}
+
+li {
+    background-color: #C0C0C0;
+    width: 25em;
+    margin-bottom: 10px;
+    }
+
+/* A még nem látogatott link színe */
+a:link {
+  color: red;
+}
+
+/* A már látogatott link színe */
+a:visited {
+  color: yellow;
+}
+
+/* Ha az egér a link fölött van */
+a:hover {
+  color: hotpink;
+}
+
+/* Kiválasztott link színe */
+a:active {
+  color: blue;
+}
+body {
+    background-image: url("kepek/hatterkep.jpg");
+}
+
+table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+th {
+  height: 40px;
+}
+
+td {
+    background-color: #C0C0C0;
+    }
+
+hr {
+    height: 15px;
+    background-color: red;
+}
